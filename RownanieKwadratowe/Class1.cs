@@ -7,7 +7,7 @@ namespace RownanieKwadratowe
         public static (double? x1, double? x2) Solve(double a, double b, double c)
         {
             double delta = b * b - 4 * a * c;
-            if (delta > 0)
+            if (delta < 0)
             {
                 return (null, null); // Brak rozwiązań rzeczywistych
             }
